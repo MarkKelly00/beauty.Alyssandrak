@@ -11,8 +11,7 @@ import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles((theme) => ({
   cardHeader: {
-    backgroundColor:
-      theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[700],
+    backgroundColor: '#f8bbd0'
   },
   cardPricing: {
     display: 'flex',
@@ -94,7 +93,7 @@ export default function Cards() {
                   action={tier.title === 'Pro'}
                   className={classes.cardHeader}
                 />
-                <CardContent>
+                <CardContent >
                   <div className={classes.cardPricing}>
                   </div>
                   <ul>
