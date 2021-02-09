@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link, Router, BrowserRouter } from 'react-router-dom';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar';
 import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
+// import Link from '@material-ui/core/Link';
+
+import './header.styles.scss';
 
 const useStyles = makeStyles((theme) => ({
     appBar: {
@@ -31,16 +34,16 @@ export default function Header() {
       <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
           <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
-            Beauty.AlyssandraK
+            <Link to="/">Beauty.AlyssandraK</Link>
           </Typography>
           <nav>
-            <Link variant="button" color="textPrimary" href="#" className={classes.link}>
+            <Link to="/services" variant="button" color="textPrimary" href="#" className={classes.link}>
               Services
             </Link>
-            <Link variant="button" color="textPrimary" href="#" className={classes.link}>
+            <Link to="/brows" variant="button" color="textPrimary" href="#" className={classes.link}>
               Brows
             </Link>
-            <Link variant="button" color="textPrimary" href="#" className={classes.link}>
+            <Link to="/location" variant="button" color="textPrimary" href="#" className={classes.link}>
               My Locations
             </Link>
           </nav>

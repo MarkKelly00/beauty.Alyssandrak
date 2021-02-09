@@ -9,6 +9,8 @@ import CardContent from '@material-ui/core/CardContent';
 import CardHeader from '@material-ui/core/CardHeader';
 import Container from '@material-ui/core/Container';
 
+import './cards.styles.scss';
+
 const useStyles = makeStyles((theme) => ({
   cardHeader: {
     backgroundColor: '#f8bbd0'
@@ -72,6 +74,7 @@ const tiers = [
       ],
       buttonText: 'Book Now',
       buttonVariant: 'contained',
+      backgroundColor: '#000000',
     }
   ];
 
