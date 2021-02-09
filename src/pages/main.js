@@ -1,15 +1,14 @@
 import React from 'react';
 import Header from '../components/header/header.component';
-import MainHero from '../components/main-hero/main-hero.component';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';
 import Footer from '../components/footer/footer';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
-import MainFeaturedPost from './MainFeaturedPost';
-import FeaturedPost from './FeaturedPost';
-import Main1 from './Main1';
-import Sidebar from './Sidebar';
+import MainFeaturedPost from '../components/welcome-image/welcome-image.component';
+import FeaturedPost from '../components/featured/Featured.component';
+import Main1 from '../components/featured/iframe/Main1';
+import Sidebar from '../components/sidebar/Sidebar.component';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import BrowLocation from '../assets/browLocation.png';
 

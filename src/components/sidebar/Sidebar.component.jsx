@@ -5,12 +5,12 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
-import JuneBug from '../assets/junebug.png';
+import JuneBug from '../../assets/junebug.png';
 
 const useStyles = makeStyles((theme) => ({
   sidebarAboutBox: {
     padding: theme.spacing(2),
-    backgroundColor: theme.palette.grey[200],
+    backgroundColor: theme.palette.grey[300],
   },
   sidebarSection: {
     marginTop: theme.spacing(2),
@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Sidebar(props) {
   const classes = useStyles();
-  const { bookings, description, social } = props;
+  const { bookings, social } = props;
 
   return (
     <Grid item xs={12} md={4}>
@@ -29,9 +29,9 @@ export default function Sidebar(props) {
       <Typography variant="h6" gutterBottom className={classes.sidebarSection}>
         Book With Me!
       </Typography>
-      {bookings.map((archive) => (
-        <Link display="block" variant="body1" href={archive.url} key={archive.title}>
-          {archive.title}
+      {bookings.map((booking) => (
+        <Link display="block" variant="body1" href={booking.url} key={booking.title}>
+          {booking.title}
         </Link>
       ))}
       <Typography variant="h6" gutterBottom className={classes.sidebarSection}>
