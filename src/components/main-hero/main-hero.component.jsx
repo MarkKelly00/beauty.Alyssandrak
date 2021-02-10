@@ -14,7 +14,7 @@ export default function MainHero() {
 
   return (
     <Container maxWidth="sm" component="main" className={classes.heroContent}>
-    <Typography component="h2" variant="h3" align="center" color="textPrimary" gutterBottom>
+    <Typography component="h2" variant="h3" align="center" color="textPrimary">
       Welcome
     </Typography>
     <iframe title="vimeo-player" src="https://player.vimeo.com/video/393721208" width="640" height="360" frameborder="0" allowfullscreen />
