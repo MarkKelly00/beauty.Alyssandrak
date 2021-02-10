@@ -23,8 +23,8 @@ function Copyright() {
 function Insta() {
     return (
         <Typography variant="body2" color="textSecondary" align="center">
-        <InstagramIcon style={{paddingTop: 5}}/>
-        <PhoneIcon style={{paddingTop: 5}}/>
+        <a href="https://www.instagram.com/beauty.alyssandrak/?hl=en"><InstagramIcon style={{paddingTop: 5}}/></a>
+        <a href="tel:+1-360-772-0226"><PhoneIcon style={{paddingTop: 5}}/></a>
         </Typography>
     )
 }

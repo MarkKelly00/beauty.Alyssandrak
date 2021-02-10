@@ -76,7 +76,6 @@ const tiers = [
       ],
       buttonText: 'Book Now',
       buttonVariant: 'contained',
-      backgroundColor: '#000000',
     }
   ];
 
