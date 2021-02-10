@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Main from './pages/main';
 import Services from './pages/services';
+import MyLocation from './pages/location';
 
 
 export default function App() {
@@ -12,8 +13,8 @@ export default function App() {
         <Switch>
         <Route exact path='/' component={Main} />
         <Route path='/services' component={Services} />
-        {/* <Route path='/brows' component={Brows} />
-        <Route path='/location' component={MyLocation} /> */}
+        {/* <Route path='/brows' component={Brows} /> */}
+        <Route path='/location' component={MyLocation} />
         </Switch>
       </Router>
     </React.Fragment>

@@ -10,7 +10,7 @@ import JuneBug from '../../assets/junebug.png';
 const useStyles = makeStyles((theme) => ({
   sidebarAboutBox: {
     padding: theme.spacing(2),
-    backgroundColor: theme.palette.grey[300],
+    backgroundColor: '#f285da',
   },
   sidebarSection: {
     marginTop: theme.spacing(2),
