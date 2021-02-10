@@ -20,7 +20,7 @@ export default function Hero() {
     <Typography variant="h7" align="center" color="textSecondary" component="p">
     For hair and makeup services I operate out of my home studio in a residential neighborhood! With that being said, I recommend parking along the curb in front of my home. There is plenty of space but please be sure to park in the right direction and close enough to the curb to allow for cars to drive past!
     <br /><br />
-    17006 NE 33rd Ave, Ridgefield WA 98642
+    <a href="https://goo.gl/maps/odNUsjYynN943ear8">17006 NE 33rd Ave, Ridgefield WA 98642</a>
     </Typography>
   </Container>
   );

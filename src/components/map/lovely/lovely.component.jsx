@@ -20,7 +20,7 @@ export default function Hero() {
     <Typography variant="h7" align="center" color="textSecondary" component="p">
     For brow services I am located at Lovely. A Self Center 
     <br />
-    903 Main Street, Vancouver, WA, 98660
+    <a href="https://goo.gl/maps/5jQ5Jykz1LZxPPQ88">903 Main Street, Vancouver, WA, 98660</a>
     <br />
     <b>Thursdays from 9am - 7pm.</b>  Visit my brow page for more information.
     </Typography>

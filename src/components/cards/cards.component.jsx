@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
@@ -8,6 +9,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardHeader from '@material-ui/core/CardHeader';
 import Container from '@material-ui/core/Container';
+import 'aos/dist/aos.css';
 
 import './cards.styles.scss';
 
@@ -30,7 +32,7 @@ const tiers = [
       subheader: 'Eyebrows / Lips',
       description: ['Classic microblading | $400', 'Powder/makeup or ombre  |  $500', 'Combination microblading & shading  |  $550', '4-8 week perfecting touch up  |  $100', 'Annual touch up  |  $250'],
       buttonText: 'Book Now',
-      buttonVariant: 'contained'
+      buttonVariant: 'contained',
     },
     {
       title: 'Hair & Makeup',
@@ -79,6 +81,10 @@ const tiers = [
   ];
 
 export default function Cards() {
+  useEffect(() => {
+    Aos.init({offset: 200, duration: 1000});
+  }, [])
+
   const classes = useStyles();
 
   return (
@@ -86,8 +92,8 @@ export default function Cards() {
         <Grid container spacing={4} alignItems="flex-start">
           {tiers.map((tier) => (
             
-            <Grid item key={tier.title} xs={12} sm={tier.title === 'Enterprise' ? 12 : 6} md={3}>
-              <Card>
+            <Grid data-aos="fade-down" item key={tier.title} xs={12} sm={tier.title === 'Enterprise' ? 12 : 6} md={3}>
+              <Card >
                 <CardHeader
                   title={tier.title}
                   subheader={tier.subheader}
@@ -118,7 +124,7 @@ export default function Cards() {
         </Grid>
       <Container>
         <br /><br />
-        <Typography variant="body1" align="center" color="textSecondary" component="span">
+        <Typography data-aos="fade-up" variant="body1" align="center" color="textSecondary" component="span">
         ** Text consultations required for price estimates. I cannot guarantee the estimate to be the final price. It all depends on how much time and product is needed to get you closer to your goal!**
         </Typography>
       </Container>

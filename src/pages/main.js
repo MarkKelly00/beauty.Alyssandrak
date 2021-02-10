@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../components/header/header.component';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import { makeStyles } from '@material-ui/core/styles';
+import Aos from 'aos';
 import Footer from '../components/footer/footer';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
@@ -12,16 +11,9 @@ import Sidebar from '../components/sidebar/Sidebar.component';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import BrowLocation from '../assets/browLocation.png';
 
+import 'aos/dist/aos.css';
 
-const useStyles = makeStyles((theme) => ({
-  '@global': {
-    ul: {
-      margin: 0,
-      padding: 2,
-      listStyle: 'none',
-    },
-  },
-}));
+
   
   const featuredPosts = [
     {
@@ -60,24 +52,27 @@ const useStyles = makeStyles((theme) => ({
 
 
 export default function Main() {
-  const classes = useStyles();
+  useEffect(() => {
+    Aos.init({offset: 300, duration: 2000});
+  }, [])
+
+
 
   return (
     <React.Fragment>
-      <CssBaseline />
       <Header />
       <br />
       <Container maxWidth="lg">
         <main>
           <MainFeaturedPost />
-          <Grid container spacing={5} className={classes.mainGrid}>
-            <Main1 title="From the firehose" />
+          <Grid data-aos="fade-left" container spacing={5} >
+            <Main1 />
             <Sidebar
               bookings={sidebar.bookings}
               social={sidebar.social}
             />
           </Grid>
-          <Grid container spacing={4}>
+          <Grid data-aos="fade-up" container spacing={4} >
             {featuredPosts.map((post) => (
               <FeaturedPost key={post.title} post={post} />
             ))}
