@@ -15,7 +15,7 @@ import './cards.styles.scss';
 
 const useStyles = makeStyles((theme) => ({
   cardHeader: {
-    backgroundColor: '#f8bbd0'
+    backgroundColor: '#f576d9'
   },
   cardPricing: {
     display: 'flex',
@@ -23,6 +23,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'baseline',
     marginBottom: theme.spacing(2),
+  },
+  button: {
+    backgroundColor: '#fca7ea',
+    textShadow: '1px 1px #000000'
   }
 }));
 
@@ -113,7 +117,7 @@ export default function Cards() {
                   </ul>
                 </CardContent>
                 <CardActions>
-                  <Button fullWidth variant={tier.buttonVariant} color="primary">
+                  <Button className={classes.button} fullWidth variant={tier.buttonVariant} color="primary">
                     {tier.buttonText}
                   </Button>
                 </CardActions>

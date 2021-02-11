@@ -11,7 +11,7 @@ import Hidden from '@material-ui/core/Hidden';
 const useStyles = makeStyles({
   card: {
     display: 'flex',
-    width: 550
+    maxWidth: 650,
   },
   cardDetails: {
     flex: 1,
@@ -27,9 +27,9 @@ export default function FeaturedPost(props) {
 
   return (
     <Grid item xs={12} md={6}>
-        <Card className={classes.card}>
+        <Card className={classes.card} >
           <div className={classes.cardDetails}>
-            <CardContent>
+            <CardContent >
               <Typography component="h2" variant="h5">
                 {post.title}
               </Typography>

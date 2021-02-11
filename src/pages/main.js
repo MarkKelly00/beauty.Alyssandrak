@@ -9,11 +9,10 @@ import FeaturedPost from '../components/featured/Featured.component';
 import Main1 from '../components/featured/iframe/Main1';
 import Sidebar from '../components/sidebar/Sidebar.component';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import BrowLocation from '../assets/browLocation.png';
+import FamilyPic from '../assets/JSP_8824.jpg';
+import profilePic from '../assets/DSC00172.jpg';
 
 import 'aos/dist/aos.css';
-
-
   
   const featuredPosts = [
     {
@@ -21,15 +20,15 @@ import 'aos/dist/aos.css';
       sub: 'I am a wife, a mother, a daughter, a sister, a friend AND an artist.',
       description:
         'When you step into my studio you are given the same level of respect, honesty & care that I give my family. I strive to make sure that by the time my client leaves my chair they feel that they have been truly heard, understood, & respected. By the time my client leaves my chair they should be feeling and looking like the absolute BEST version of themselves possible.',
-      image: 'https://static.wixstatic.com/media/77c753_9d9d3f09839a4c0daea3f8668ad7430a~mv2.jpg/v1/fill/w_564,h_517,fp_0.50_0.50,q_80/77c753_9d9d3f09839a4c0daea3f8668ad7430a~mv2.webp',
-      imageText: 'Image Text',
+      image: FamilyPic,
+      imageText: 'My Family',
     },
     {
       title: 'Contact Me!',
       sub: '(360)772-0226',
       description:
         'The best way to reach me is text messaging, email, or instagram DM. The fastest way to get ahold of me is text, but in general, please allow 24-48 hours for a response!',
-      image: BrowLocation,
+      image: profilePic,
       imageText: 'beauty.alyssandrak@gmail.com',
     },
   ];

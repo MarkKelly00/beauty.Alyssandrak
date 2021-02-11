@@ -10,11 +10,19 @@ import JuneBug from '../../assets/junebug.png';
 const useStyles = makeStyles((theme) => ({
   sidebarAboutBox: {
     padding: theme.spacing(2),
+    overflow: 'hidden',
     backgroundColor: '#f285da',
+    maxWidth: 350
   },
   sidebarSection: {
     marginTop: theme.spacing(2),
   },
+  image: {
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    backgroundSize: 'cover', 
+    maxWidth: 300
+  }
 }));
 
 export default function Sidebar(props) {
@@ -24,7 +32,7 @@ export default function Sidebar(props) {
   return (
     <Grid item xs={12} md={4}>
       <Paper elevation={0} className={classes.sidebarAboutBox}>
-        <img src={JuneBug} style={{backgroundSize: 'cover', width: 300}}/>
+        <img src={JuneBug}className={classes.image}/>
       </Paper>
       <Typography variant="h6" gutterBottom className={classes.sidebarSection}>
         Book With Me!
