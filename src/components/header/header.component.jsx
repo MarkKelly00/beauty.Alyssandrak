@@ -39,8 +39,8 @@ export default function Header() {
             <Link to="/services" variant="button" color="textPrimary" href="#" className={classes.link}>
               Services
             </Link>
-            <Link to="/brows" variant="button" color="textPrimary" href="#" className={classes.link}>
-              Brows
+            <Link to="/contact" variant="button" color="textPrimary" href="#" className={classes.link}>
+              Contact
             </Link>
             <Link to="/location" variant="button" color="textPrimary" href="#" className={classes.link}>
               My Locations

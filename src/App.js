@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Main from './pages/main';
 import Services from './pages/services';
+import Contact from './pages/contact';
 import MyLocation from './pages/location';
 
 
@@ -12,9 +13,9 @@ export default function App() {
       <Router>
         <Switch>
         <Route exact path='/' component={Main} />
-        <Route path='/services' component={Services} />
-        {/* <Route path='/brows' component={Brows} /> */}
-        <Route path='/location' component={MyLocation} />
+        <Route exact path='/services' component={Services} />
+        <Route exact path='/contact' component={Contact} />
+        <Route exact path='/location' component={MyLocation} />
         </Switch>
       </Router>
     </React.Fragment>
