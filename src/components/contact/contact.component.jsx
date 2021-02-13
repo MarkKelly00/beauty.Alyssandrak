@@ -18,6 +18,9 @@ const useStyles = makeStyles((theme) => ({
     },
     button: {
         height: 60,
+        width: 80,
+        fontSize: 14,
+        backgroundColor: '#f576d9',
       },
   }));
 
