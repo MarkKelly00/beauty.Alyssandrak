@@ -7,6 +7,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Hidden from '@material-ui/core/Hidden';
+import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles({
   card: {
@@ -19,6 +20,10 @@ const useStyles = makeStyles({
   cardMedia: {
     width: 200,
   },
+  linkStyle: {
+    textDecoration: 'none',
+    color: 'inherit',
+  }
 });
 
 export default function FeaturedPost(props) {
@@ -30,6 +35,7 @@ export default function FeaturedPost(props) {
         <Card className={classes.card} >
           <div className={classes.cardDetails}>
             <CardContent >
+            <Link className={classes.linkStyle} variant="subtitle1" href="/contact">
               <Typography component="h2" variant="h5">
                 {post.title}
               </Typography>
@@ -40,6 +46,7 @@ export default function FeaturedPost(props) {
               <Typography variant="subtitle1" paragraph>
                 {post.description}
               </Typography>
+            </Link>
             </CardContent>
           </div>
           <Hidden xsDown>

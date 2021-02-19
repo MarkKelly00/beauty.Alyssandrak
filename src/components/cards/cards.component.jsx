@@ -37,6 +37,7 @@ const tiers = [
       description: ['Classic microblading | $400', 'Powder/makeup or ombre  |  $500', 'Combination microblading & shading  |  $550', '4-8 week perfecting touch up  |  $100', 'Annual touch up  |  $250'],
       buttonText: 'Book Now',
       buttonVariant: 'contained',
+      buttonLink: '/brows'
     },
     {
       title: 'Hair & Makeup',
@@ -51,6 +52,7 @@ const tiers = [
       ],
       buttonText: 'Book Now',
       buttonVariant: 'contained',
+      buttonLink: '/hair'
     },
     {
       title: 'Color Services',
@@ -66,6 +68,7 @@ const tiers = [
       ],
       buttonText: 'Book Now',
       buttonVariant: 'contained',
+      buttonLink: '/color'
     },
     {
       title: 'Haircuts',
@@ -80,6 +83,7 @@ const tiers = [
       ],
       buttonText: 'Book Now',
       buttonVariant: 'contained',
+      buttonLink: '/hair'
     }
   ];
 
@@ -117,7 +121,7 @@ export default function Cards() {
                   </ul>
                 </CardContent>
                 <CardActions>
-                  <Button className={classes.button} fullWidth variant={tier.buttonVariant} color="primary">
+                  <Button className={classes.button} fullWidth variant={tier.buttonVariant} color="primary" href={tier.buttonLink}>
                     {tier.buttonText}
                   </Button>
                 </CardActions>
