@@ -10,7 +10,8 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
     appBar: {
         borderBottom: `1px solid ${theme.palette.divider}`,
-        background: '#f576d9'
+        background: '#f576d9',
+        width: '100%'
       },
       toolbar: {
         flexWrap: 'wrap',
