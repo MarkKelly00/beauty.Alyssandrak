@@ -13,7 +13,7 @@ export default function Main1() {
 
   return (
     <Grid item xs={12} md={8} className={classes.iframe}>
-      <iframe width="700" height="415" src="https://www.youtube.com/embed/GUQKNM-d9k8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+      <iframe title="video-tour" width="700" height="415" src="https://www.youtube.com/embed/GUQKNM-d9k8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
     </Grid>
   );
 }

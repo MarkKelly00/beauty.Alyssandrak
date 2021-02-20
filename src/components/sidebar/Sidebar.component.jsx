@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   image: {
     marginLeft: 'auto',
     marginRight: 'auto',
-    backgroundSize: 'cover', 
+    backgroundSize: 'cover',
     maxWidth: 300
   }
 }));
@@ -32,7 +32,7 @@ export default function Sidebar(props) {
   return (
     <Grid item xs={12} md={4}>
       <Paper elevation={0} className={classes.sidebarAboutBox}>
-        <img src={JuneBug}className={classes.image}/>
+        <img src={JuneBug}className={classes.image} alt="juneBugAward"/>
       </Paper>
       <Typography variant="h6" gutterBottom className={classes.sidebarSection}>
         Book With Me!

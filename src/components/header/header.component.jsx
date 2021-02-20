@@ -7,8 +7,6 @@ import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar';
 import Typography from '@material-ui/core/Typography';
 
-import './header.styles.scss';
-
 const useStyles = makeStyles((theme) => ({
     appBar: {
         borderBottom: `1px solid ${theme.palette.divider}`,
@@ -22,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
       },
       link: {
         margin: theme.spacing(1, 1.5),
+        textDecoration: 'none',
+        color: 'black',
+        fontFamily: "'Josefin Sans', sans-serif",
       }
 }));
 
@@ -33,7 +34,7 @@ export default function Header() {
       <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
           <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
-            <Link to="/">Beauty.AlyssandraK</Link>
+            <Link to="/" className={classes.link}>Beauty.AlyssandraK</Link>
           </Typography>
           <nav>
             <Link to="/services" variant="button" color="textPrimary" href="#" className={classes.link}>

@@ -6,12 +6,14 @@ import Typography from '@material-ui/core/Typography';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import PhoneIcon from '@material-ui/icons/Phone';
 
+import './footer.styles.scss';
+
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link to="/" color="inherit">
+      <Link to="/" color="black" style={{textDecoration: 'none', fontFamily: "'Josefin Sans', sans-serif", fontSize: 15}}>
         Beauty.AlyssandraK
       </Link>{' '}
       {new Date().getFullYear()}
@@ -22,7 +24,7 @@ function Copyright() {
 
 function Insta() {
     return (
-        <Typography variant="body2" color="textSecondary" align="center">
+        <Typography variant="body2" color="black" align="center">
         <a href="https://www.instagram.com/beauty.alyssandrak/?hl=en"><InstagramIcon style={{paddingTop: 5}}/></a>
         <a href="tel:+1-360-772-0226"><PhoneIcon style={{paddingTop: 5}}/></a>
         </Typography>
@@ -36,10 +38,7 @@ const useStyles = makeStyles((theme) => ({
         background: '#f576d9',
         paddingTop: theme.spacing(3),
         paddingBottom: theme.spacing(3),
-        [theme.breakpoints.up('sm')]: {
-          paddingTop: theme.spacing(6),
-          paddingBottom: theme.spacing(6),
-        }
+        textDecoration: "none",
     }
   }));
 

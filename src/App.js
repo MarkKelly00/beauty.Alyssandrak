@@ -4,6 +4,9 @@ import Main from './pages/main';
 import Services from './pages/services';
 import Contact from './pages/contact';
 import MyLocation from './pages/location';
+import Hair from './pages/hair';
+import Color from './pages/color';
+import Brows from './pages/brows';
 
 
 export default function App() {
@@ -16,6 +19,9 @@ export default function App() {
         <Route exact path='/services' component={Services} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/location' component={MyLocation} />
+        <Route exact path='/brows' component={Brows} />
+        <Route exact path='/hair' component={Hair} />
+        <Route exact path='/color' component={Color} />
         </Switch>
       </Router>
     </React.Fragment>

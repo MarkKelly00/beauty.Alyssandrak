@@ -19,6 +19,7 @@ export default function Data() {
         <iframe
           width="500"
           height="350"
+          title="lovely-location"
           frameborder="0"
           style={{ border: 0, margin: 5 }}
           src={location}

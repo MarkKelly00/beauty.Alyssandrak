@@ -6,8 +6,6 @@ import Grid from '@material-ui/core/Grid';
 import Typewriter from 'typewriter-effect';
 import AlyK from '../../assets/alyk.png';
 
-import './welcome.styles.scss';
-
 const useStyles = makeStyles((theme) => ({
   mainFeaturedPost: {
     position: 'relative',
@@ -28,6 +26,11 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: 0,
     },
   },
+  h1: {
+    fontFamily: "'Courier New', serif",
+    fontSize: '40px',
+    textShadow: "2px 2px #ffffff",
+}
 }));
 
 export default function MainFeaturedPost(props) {
@@ -37,7 +40,7 @@ export default function MainFeaturedPost(props) {
     <Paper className={classes.mainFeaturedPost} >
       <Grid container>
           <div className={classes.mainFeaturedPostContent}>
-            <Typography component="h1" variant="subheading" color="textPrimary" style={{height: 200}}>
+            <Typography className={classes.h1} component="h1" variant="subheading" color="textPrimary" style={{height: 200}}>
             <Typewriter
               options={{
                 strings: [

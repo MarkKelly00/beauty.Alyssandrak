@@ -45,7 +45,7 @@ export default function Form() {
   }
   const sendEmail = () => {
     Axios.post(
-      'https://us-central1-your-app-name.cloudfunctions.net/submit',
+      'https://us-central1-beautyalyssandra.cloudfunctions.net/submit',
       formData
     )
       .then(res => {
@@ -102,6 +102,7 @@ export default function Form() {
         color="primary"
         className={classes.button}
         endIcon={<Icon>send</Icon>}
+        onClick={handleSubmit}
       >
         Send
       </Button>
