@@ -10,7 +10,6 @@ export default function Contact() {
     <React.Fragment>
       <Header />
       <Hero />
-      <br />
       <Form />
       <Footer />
     </React.Fragment>

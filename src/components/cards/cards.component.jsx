@@ -17,13 +17,6 @@ const useStyles = makeStyles((theme) => ({
   cardHeader: {
     backgroundColor: '#f576d9'
   },
-  cardPricing: {
-    display: 'flex',
-    width: '300px',
-    justifyContent: 'center',
-    alignItems: 'baseline',
-    marginBottom: theme.spacing(2),
-  },
   button: {
     backgroundColor: '#fca7ea',
     textShadow: '1px 1px #000000'
@@ -35,7 +28,7 @@ const tiers = [
       title: 'Microblading',
       subheader: 'Eyebrows / Lips',
       description: ['Classic microblading | $400', 'Powder/makeup or ombre  |  $500', 'Combination microblading & shading  |  $550', '4-8 week perfecting touch up  |  $100', 'Annual touch up  |  $250'],
-      buttonText: 'Book Now',
+      buttonText: 'More Info',
       buttonVariant: 'contained',
       buttonLink: '/brows'
     },
@@ -50,15 +43,16 @@ const tiers = [
         'Travel Fee  |  $25+',
         '**All makeup services include a touch up kit and false lashes**',
       ],
-      buttonText: 'Book Now',
+      buttonText: 'More Info',
       buttonVariant: 'contained',
       buttonLink: '/hair'
     },
     {
       title: 'Color Services',
+      subheader: 'Text consultation ** required for price',
       description: [
         'Highlights  |  $90+     Partial  |  $80+',
-        'Babylights  |  Text consultation required for price',
+        'Babylights | Text consultation*',
         'Balayage  |  $110+',
         'Lowlights  |  $85+     Partial  |  $70+',
         'Platinum  |  $115+',
@@ -66,12 +60,13 @@ const tiers = [
         'Root Retouch  |  $45+',
         'All Over Color  |  $65+     Partial  |  $45+'
       ],
-      buttonText: 'Book Now',
+      buttonText: 'More Info',
       buttonVariant: 'contained',
       buttonLink: '/color'
     },
     {
       title: 'Haircuts',
+      subheader: 'Hair Treatments Available',
       description: [
         'Women\'s  |  $40',
         'Men\'s  |  $20',
@@ -81,7 +76,7 @@ const tiers = [
         'Lil\' Boys  |  $12 (up to 12 years young)',
         'Bang Trim  |  $10'
       ],
-      buttonText: 'Book Now',
+      buttonText: 'More Info',
       buttonVariant: 'contained',
       buttonLink: '/hair'
     }
@@ -95,12 +90,12 @@ export default function Cards() {
   const classes = useStyles();
 
   return (
-    <Container maxWidth="lg" component="main">
+    <Container maxWidthLg component="main">
         <Grid container spacing={4} alignItems="flex-start">
           {tiers.map((tier) => (
             
             <Grid data-aos="fade-down" item key={tier.title} xs={12} sm={tier.title === 'Enterprise' ? 12 : 6} md={3}>
-              <Card >
+              <Card className="card">
                 <CardHeader
                   title={tier.title}
                   subheader={tier.subheader}
@@ -110,8 +105,6 @@ export default function Cards() {
                   className={classes.cardHeader}
                 />
                 <CardContent >
-                  <div className={classes.cardPricing}>
-                  </div>
                   <ul>
                     {tier.description.map((line) => (
                       <Typography component="li" variant="subtitle1" align="center" key={line}>

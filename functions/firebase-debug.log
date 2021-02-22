@@ -1,0 +1,58 @@
+[debug] [2021-02-22T05:21:22.184Z] ----------------------------------------------------------------------
+[debug] [2021-02-22T05:21:22.186Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\BigMa\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2021-02-22T05:21:22.187Z] CLI Version:   9.4.0
+[debug] [2021-02-22T05:21:22.187Z] Platform:      win32
+[debug] [2021-02-22T05:21:22.187Z] Node Version:  v14.15.4
+[debug] [2021-02-22T05:21:22.189Z] Time:          Sun Feb 21 2021 21:21:22 GMT-0800 (Pacific Standard Time)
+[debug] [2021-02-22T05:21:22.189Z] ----------------------------------------------------------------------
+[debug] [2021-02-22T05:21:22.189Z] 
+[debug] [2021-02-22T05:21:22.198Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-22T05:21:22.198Z] > authorizing via signed-in user
+[debug] [2021-02-22T05:21:22.199Z] [iam] checking project beautyalyssandra for permissions ["firebase.projects.get"]
+[debug] [2021-02-22T05:21:22.201Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/beautyalyssandra:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-02-22T05:21:22.356Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Feb 2021 05:21:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=42","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  Your requested "node" version "12" doesn't match your global version "14" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"12\" doesn't match your global version \"14\""}}
+[debug] [2021-02-22T05:21:22.365Z] defaultcredentials: writing to file C:\Users\BigMa\AppData\Roaming\firebase\big_mako_gmail.com_application_default_credentials.json
+[debug] [2021-02-22T05:21:22.367Z] DEBUG: Setting GAC to C:\Users\BigMa\AppData\Roaming\firebase\big_mako_gmail.com_application_default_credentials.json
+[debug] [2021-02-22T05:21:22.368Z] > refreshing access token with scopes: []
+[debug] [2021-02-22T05:21:22.369Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-22T05:21:22.496Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 22 Feb 2021 05:21:22 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-22T05:21:22.504Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/beautyalyssandra/adminSdkConfig [none]
+[debug] [2021-02-22T05:21:22.717Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/beautyalyssandra/adminSdkConfig 200
+[debug] [2021-02-22T05:21:22.717Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/beautyalyssandra/adminSdkConfig {"projectId":"beautyalyssandra","storageBucket":"beautyalyssandra.appspot.com","locationId":"us-central"}
+[debug] [2021-02-22T05:21:22.735Z] [functions] Watching "C:\Users\BigMa\code\beauty.Alyssandrak\functions" for Cloud Functions...
+[debug] [2021-02-22T05:21:22.746Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-02-22T05:21:22.746Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2021-02-22T05:21:22.747Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-02-22T05:21:22.747Z] DEBUG: [worker-~diagnostic~-1bec955c-5442-43b5-a136-e5e38c100a10]: Assigning socketPath: \\?\pipe\C:\Users\BigMa\code\beauty.Alyssandrak\functions\25240
+[debug] [2021-02-22T05:21:22.747Z] DEBUG: [worker-~diagnostic~-1bec955c-5442-43b5-a136-e5e38c100a10]: BUSY
+[debug] [2021-02-22T05:21:22.980Z] DEBUG: [runtime-status] [25240] Functions runtime initialized. {"cwd":"C:\\Users\\BigMa\\code\\beauty.Alyssandrak\\functions","node_version":"14.15.4"}
+[debug] [2021-02-22T05:21:22.980Z] DEBUG: [runtime-status] [25240] Disabled runtime features: undefined
+[debug] [2021-02-22T05:21:22.984Z] DEBUG: [runtime-status] [25240] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.5.0","resolution":"C:\\Users\\BigMa\\code\\beauty.Alyssandrak\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-02-22T05:21:22.986Z] DEBUG: [runtime-status] [25240] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.1","resolution":"C:\\Users\\BigMa\\code\\beauty.Alyssandrak\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-02-22T05:21:22.995Z] DEBUG: [runtime-status] [25240] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.1","resolution":"C:\\Users\\BigMa\\code\\beauty.Alyssandrak\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-02-22T05:21:22.996Z] DEBUG: [runtime-status] [25240] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-02-22T05:21:22.997Z] DEBUG: [runtime-status] [25240] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.1","resolution":"C:\\Users\\BigMa\\code\\beauty.Alyssandrak\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-02-22T05:21:23.050Z] DEBUG: [runtime-status] [25240] Checked functions.config() {"config":{}}
+[debug] [2021-02-22T05:21:23.050Z] DEBUG: [runtime-status] [25240] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.13.1","resolution":"C:\\Users\\BigMa\\code\\beauty.Alyssandrak\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-02-22T05:21:23.051Z] DEBUG: [runtime-status] [25240] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.1","resolution":"C:\\Users\\BigMa\\code\\beauty.Alyssandrak\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-02-22T05:21:23.053Z] DEBUG: [runtime-status] [25240] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.5.0","resolution":"C:\\Users\\BigMa\\code\\beauty.Alyssandrak\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-02-22T05:21:23.054Z] DEBUG: [runtime-status] [25240] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.1","resolution":"C:\\Users\\BigMa\\code\\beauty.Alyssandrak\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-02-22T05:21:23.054Z] DEBUG: [runtime-status] [25240] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.5.0","resolution":"C:\\Users\\BigMa\\code\\beauty.Alyssandrak\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  It looks like you're trying to access functions.config().gmail but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator {"metadata":{"emulator":{"name":"functions"},"message":"It looks like you're trying to access functions.config().gmail but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator"}}
+[warn] !  TypeError: Cannot read property 'email' of undefined
+    at Object.<anonymous> (C:\Users\BigMa\code\beauty.Alyssandrak\functions\index.js:6:44)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at initializeRuntime (C:\Users\BigMa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:678:29)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async handleMessage (C:\Users\BigMa\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:716:20) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'email' of undefined\n    at Object.<anonymous> (C:\\Users\\BigMa\\code\\beauty.Alyssandrak\\functions\\index.js:6:44)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n    at Module.load (internal/modules/cjs/loader.js:928:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n    at Module.require (internal/modules/cjs/loader.js:952:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at initializeRuntime (C:\\Users\\BigMa\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:678:29)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async handleMessage (C:\\Users\\BigMa\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:716:20)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2021-02-22T05:21:23.132Z] DEBUG: [worker-~diagnostic~-1bec955c-5442-43b5-a136-e5e38c100a10]: exited
+[debug] [2021-02-22T05:21:23.132Z] DEBUG: [worker-~diagnostic~-1bec955c-5442-43b5-a136-e5e38c100a10]: FINISHED

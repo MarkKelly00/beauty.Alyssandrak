@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Axios, db } from 'axios';
+import { Axios, db } from "axios";
 import { makeStyles } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
-import TextField from "@material-ui/core/TextField";
 import Icon from "@material-ui/core/Icon";
+
+import "./contact.styles.scss";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,95 +17,75 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     height: 60,
-    width: "15ch",
-    fontSize: 14,
+    fontSize: 15,
     backgroundColor: "#f576d9",
-    display: "flex"
+    display: "flex",
   },
 }));
 
-export default function Form() {
+const Form = () => {
   const classes = useStyles();
-  const [formData, setFormData] = useState({})
+  const [formData, setFormData] = useState({});
 
-  const updateInput = e => {
+  const updateInput = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
-    })
-  }
-  const handleSubmit = event => {
-    event.preventDefault()
-    sendEmail()
+    });
+  };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    sendEmail();
     setFormData({
-      name: '',
-      email: '',
-      message: '',
-    })
-  }
+      name: "",
+      email: "",
+      message: "",
+    });
+  };
   const sendEmail = () => {
     Axios.post(
-      'https://us-central1-beautyalyssandra.cloudfunctions.net/submit',
+      "https://us-central1-beautyalyssandra.cloudfunctions.net/submit",
       formData
     )
-      .then(res => {
-        db.collection('emails').add({
+      .then((res) => {
+        db.collection("emails").add({
           name: formData.name,
           email: formData.email,
           message: formData.message,
           time: new Date(),
-        })
+        });
       })
-      .catch(error => {
-        console.log(error)
-      })
-  }
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   return (
-    <form className={classes.root} noValidate autoComplete="off">
-      <TextField
-        inputProps={{ style: { width: 250 } }}
-        id="standard-basic"
-        label="Name"
-        variant="standard"
-        onChange={updateInput}
-        value={formData.name || ''}
-      />
-      <br />
-      <TextField
-        inputProps={{ style: { width: 250 } }}
-        id="standard-basic"
-        label="Email"
-        variant="standard"
-        onChange={updateInput}
-        value={formData.email || ''}
-      />
-      <br />
-      <TextField
-      multiline
-        inputProps={{ style: { width: 250, height: 200 } }}
-        id="outlined-full-width"
-        label="Message"
-        style={{ width: "33ch" }}
-        placeholder="Please Leave A Message..."
-        InputLabelProps={{
-          shrink: true,
-        }}
-        variant="outlined"
-        onChange={updateInput}
-        value={formData.message || ''}
-      />
-      <br />
-      <Button
-        type="submit"
-        variant="contained"
-        color="primary"
-        className={classes.button}
-        endIcon={<Icon>send</Icon>}
-        onClick={handleSubmit}
-      >
-        Send
-      </Button>
-    </form>
+    <form onSubmit={handleSubmit}>
+    <input
+      type="text"
+      name="name"
+      placeholder="Name"
+      onChange={updateInput}
+      value={formData.name || ''}
+    />
+    <input
+      type="email"
+      name="email"
+      placeholder="Email"
+      onChange={updateInput}
+      value={formData.email || ''}
+    />
+    <textarea
+      type="text"
+      name="message"
+      placeholder="Message"
+      onChange={updateInput}
+      value={formData.message || ''}
+    ></textarea>
+    <button type="submit" className={classes.button}>Submit&nbsp;<Icon>send</Icon></button>
+  </form>
   );
-}
+};
+
+export default Form;
