@@ -5,10 +5,10 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import CssBaseline from "@material-ui/core/CssBaseline";
 import Grid from "@material-ui/core/Grid";
 import Footer from "../components/footer/footer";
 import Typography from "@material-ui/core/Typography";
+import Box from '@material-ui/core/Box';
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Aos from "aos";
@@ -16,7 +16,7 @@ import Aos from "aos";
 import ComboBrow from "../assets/carousel/combination-brows/combinationBrow2.png";
 import Microblading from "../assets/carousel/microblading/Microblading3.png";
 import PowderBrow from "../assets/carousel/powder-brows/PowderBrow5.png";
-// import Link from '@material-ui/core/Link';
+
 import "aos/dist/aos.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -24,8 +24,8 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
   },
   heroContent: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(8, 0, 6),
+    backgroundColor: "#fca7ea",
+    padding: theme.spacing(6, 0, 2),
   },
   heroButtons: {
     marginTop: theme.spacing(4),
@@ -39,6 +39,10 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     display: "flex",
     flexDirection: "column",
+    transition: "all 0.3s cubic-bezier(.25,.8,.25,1)",
+    '&:hover': {
+      boxShadow: "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)"
+    }
   },
   cardMedia: {
     paddingTop: "56.25%", // 16:9
@@ -83,18 +87,17 @@ const tiers = [
   },
 ];
 
-export default function Hair() {
+export default function Brows() {
   const classes = useStyles();
   useEffect(() => {
-    Aos.init({ offset: 300, duration: 2000 });
+    Aos.init({ offset: 200, duration: 2000 });
   }, []);
 
   return (
     <React.Fragment>
-      <CssBaseline />
       <Header />
       <main>
-        <div className={classes.heroContent}>
+        <Box className={classes.heroContent} boxShadow={3}>
           <Container maxWidth="md">
             <Typography
               component="h1"
@@ -103,7 +106,7 @@ export default function Hair() {
               color="textPrimary"
               gutterBottom
             >
-              #BrowsbyAlyssandra
+              Hair | Makeup | Weddings | Events
             </Typography>
             <Typography
               variant="h7"
@@ -111,48 +114,16 @@ export default function Hair() {
               color="textSecondary"
               paragraph
             >
-              <ul>
-                A $100 deposit must be taken to reserve your appointment date
-                and time. This can be taken via Venmo or Card over the phone.
-              </ul>
-              <ul>
-                You must be 18+ to receive this service you are not pregnant or
-                breastfeeding at the time of our appointment.
-              </ul>
-              <ul>No Caffeine or exercise the day of our appointment.</ul>
-              <ul>Avoid any Alcohol use for 24 hours prior to treatment.</ul>
-              <ul>
-                Avoid any blood thinning medications for 48 hours prior to
-                treatment. This includes, but is not limited to fish oils,
-                tylenol, ibuprofen, or medication that raises blood pressure.{" "}
-                <b>THIS IS EXTREMELY IMPORTANT!</b>
-              </ul>
-              <ul>
-                Stop using any retinol creams or chemical peels 72 hours prior
-                to treatment.
-              </ul>
-              <ul>
-                Botox appointments must be at least two weeks before treatment
-                and at least two weeks after treatment.
-              </ul>
-              <ul>Stay hydrated, it will help with color retention!</ul>
-              <ul>
-                I recommend arriving to your appointment with a full stomach as
-                well, our appointment can last up to 3 hours.
-              </ul>
-              <ul>
-                Please do not bring any guests with you, there is no waiting
-                room.
-              </ul>
+              <iframe title="vimeo-player" src="https://player.vimeo.com/video/393721208" width="640" height="360" frameborder="0" allowfullscreen></iframe>
             </Typography>
           </Container>
-        </div>
+        </Box>
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
-          <Grid container spacing={4}>
+          <Grid data-aos="fade-down" container spacing={4}>
             {tiers.map((tier) => (
               <Grid item key={tier.title} xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
+                <Card className={classes.card} >
                   <CardMedia
                     className={classes.cardMedia}
                     image={tier.image}
