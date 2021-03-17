@@ -5,7 +5,12 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) =>({
   heroContent: {
-    padding: theme.spacing(6, 0, 6),
+    backgroundImage: "linear-gradient(0deg, rgba(252, 154, 224, 0.86), rgba(252, 158, 244, 0.88)), url('http://static1.squarespace.com/static/55458a02e4b0b68214c256b8/t/5545afeae4b07c8a62a438b6/1556984112510/')",
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: '100%',
+    minHeight: '45vh',
+    maxWidth: '100%',
+    padding: theme.spacing(6, 0, 2),
   }
 }));
 
