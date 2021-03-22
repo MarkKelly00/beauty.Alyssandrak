@@ -118,9 +118,9 @@ export default function Brows() {
             </Typography>
           </Container>
         </Box>
-        <Container className={classes.cardGrid} maxWidth="md">
+        <Container className={classes.cardGrid} maxWidth="lg">
           {/* End hero unit */}
-          <Grid data-aos="fade-down" container spacing={4}>
+          <Grid data-aos="fade-down" container spacing={2}>
             {tiers.map((tier) => (
               <Grid item key={tier.title} xs={12} sm={6} md={4}>
                 <Card className={classes.card} >

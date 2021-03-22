@@ -27,7 +27,7 @@ import 'aos/dist/aos.css';
       title: 'Contact Me!',
       sub: '(360)772-0226',
       description:
-        'The best way to reach me is text messaging, email, or instagram DM. The fastest way to get ahold of me is text, but in general, please allow 24-48 hours for a response!',
+        'The best way to reach me is text messaging, email, or instagram DM. The fastest way to get ahold of me is text or click here to submit a contact form. In general, please allow 24-48 hours for a response!',
       image: profilePic,
       imageText: 'beauty.alyssandrak@gmail.com',
     },

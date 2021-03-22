@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) =>({
     backgroundSize: '100%',
     minHeight: '45vh',
     maxWidth: '100%',
-    padding: theme.spacing(6, 0, 2),
+    padding: theme.spacing(6),
   }
 }));
 
@@ -26,9 +26,7 @@ export default function Hero() {
     <Typography variant="h7" align="center" color="textSecondary" component="p">
     -As of November 1st 2020 I am no longer accepting new clients. If any openings for new clients come up I will post it on social media and from there it will be first-come-first-serve!
     <br /><br />
-    -Due to not taking new clients, I have disabled my online booking so please reach out via text message to schedule and be sure to pre book at the end of your appointment!
-    <br /><br />
-    -My schedule has changed. I will be available for hair appointments Monday-Wednesday & Friday, and Thursdays will be reserved for microblading, powder brows and eyelash extensions.
+    -My schedule has changed. I will be available for hair appointments Monday-Wednesday & Friday. Thursdays & Saturday will be reserved for microblading, powder brows and lip blush.
     </Typography>
   </Container>
   );

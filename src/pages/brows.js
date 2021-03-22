@@ -63,27 +63,27 @@ const useStyles = makeStyles((theme) => ({
 const tiers = [
   {
     title: "Microblading",
-    description: [""],
+    description: ["A highly accurate, semi-permanent form of cosmetic tattoo. It fills in sparse eyebrows in a natural-looking way, creating the illusion of more hairs on the brow."],
     image: Microblading,
     buttonText: "Book Now",
     buttonVariant: "contained",
-    buttonLink: "/",
+    buttonLink: "https://square.site/book/LR4716B541B83/lovely-a-self-center-vancouver-wa",
   },
   {
     title: "Powder Brows",
-    description: [""],
+    description: ["A cosmetic semi permanent makeup technique designed to create eyebrows with soft powder effect, very similar to powder makeup. Powder effect is done with a shading technique using a permanent makeup device."],
     image: PowderBrow,
     buttonText: "Book Now",
     buttonVariant: "contained",
-    buttonLink: "/",
+    buttonLink: "https://square.site/book/LR4716B541B83/lovely-a-self-center-vancouver-wa",
   },
   {
     title: "Combination Brows",
-    description: [""],
+    description: ["A form of permanent makeup (cosmetic tattoo), where both the Microblading technique and Powder/shading are combined. This technique is great for those who have sparse eyebrows, little to no hair, or those who simply want to add definition to their eyebrows and arch."],
     image: ComboBrow,
     buttonText: "Book Now",
     buttonVariant: "contained",
-    buttonLink: "/",
+    buttonLink: "https://square.site/book/LR4716B541B83/lovely-a-self-center-vancouver-wa",
   },
 ];
 
@@ -150,9 +150,9 @@ export default function Brows() {
             </Typography>
           </Container>
         </Box>
-        <Container className={classes.cardGrid} maxWidth="md">
+        <Container className={classes.cardGrid} maxWidth="lg">
           {/* End hero unit */}
-          <Grid data-aos="fade-down" container spacing={4}>
+          <Grid data-aos="fade-down" container spacing={2}>
             {tiers.map((tier) => (
               <Grid item key={tier.title} xs={12} sm={6} md={4}>
                 <Card className={classes.card} >

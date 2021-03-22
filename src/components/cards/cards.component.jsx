@@ -33,8 +33,8 @@ const tiers = [
       buttonLink: '/brows'
     },
     {
-      title: 'Hair & Makeup',
-      subheader: 'Events / Weddings',
+      title: 'Events / Weddings',
+      subheader: 'Hair & Makeup',
       description: [
         'Bridal Makeup  |  $185',
         'Bridal Hair  |  $165',
@@ -45,7 +45,7 @@ const tiers = [
       ],
       buttonText: 'More Info',
       buttonVariant: 'contained',
-      buttonLink: '/hair'
+      buttonLink: '/events'
     },
     {
       title: 'Color Services',
@@ -87,8 +87,8 @@ export default function Cards() {
   const classes = useStyles();
 
   return (
-    <Container maxWidthLg component="main">
-        <Grid container spacing={4} alignItems="flex-start">
+    <Container maxWidth="lg" component="main">
+        <Grid container spacing={2} alignItems="flex-start">
           {tiers.map((tier) => (
             
             <Grid data-aos="fade-down" item key={tier.title} xs={12} sm={tier.title === 'Enterprise' ? 12 : 6} md={3}>

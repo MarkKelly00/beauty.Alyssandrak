@@ -63,7 +63,6 @@ const useStyles = makeStyles((theme) => ({
 const tiers = [
   {
     title: "Microblading",
-    description: [""],
     image: Microblading,
     buttonText: "Book Now",
     buttonVariant: "contained",
@@ -71,7 +70,6 @@ const tiers = [
   },
   {
     title: "Powder Brows",
-    description: [""],
     image: PowderBrow,
     buttonText: "Book Now",
     buttonVariant: "contained",
@@ -79,7 +77,6 @@ const tiers = [
   },
   {
     title: "Combination Brows",
-    description: [""],
     image: ComboBrow,
     buttonText: "Book Now",
     buttonVariant: "contained",
@@ -87,7 +84,7 @@ const tiers = [
   },
 ];
 
-export default function Color() {
+export default function Events() {
   const classes = useStyles();
   useEffect(() => {
     Aos.init({ offset: 200, duration: 2000 });
@@ -106,7 +103,7 @@ export default function Color() {
               color="textPrimary"
               gutterBottom
             >
-              Color Services
+              Hair | Makeup | Weddings | Events
             </Typography>
             <Typography
               variant="h7"
@@ -114,13 +111,12 @@ export default function Color() {
               color="textSecondary"
               paragraph
             >
+              <iframe title="vimeo-player" src="https://player.vimeo.com/video/393721208" width="640" height="360" frameborder="0" allowfullscreen></iframe>
               <ul>
-                I recommend arriving to your appointment with a full stomach as
-                well, our appointment can last up to 3 hours.
+              **All makeup services include a touch up kit and false lashes**
               </ul>
               <ul>
-                Please do not bring any guests with you, there is no waiting
-                room.
+              Bridal parties larger than 4-5 services will be referred to GlamourisePDX. I contract myself out to them and cannot manage large parties on my own. The owner will coordinate a team to fit your needs. be sure to request me.♡
               </ul>
             </Typography>
           </Container>
@@ -139,20 +135,6 @@ export default function Color() {
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
                       {tier.title}
-                    </Typography>
-                    <Typography>
-                      <ul>
-                        {tier.description.map((line) => (
-                          <Typography
-                            component="li"
-                            variant="subtitle1"
-                            align="center"
-                            key={line}
-                          >
-                            {line}
-                          </Typography>
-                        ))}
-                      </ul>
                     </Typography>
                   </CardContent>
                   <CardActions>
