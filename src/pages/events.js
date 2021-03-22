@@ -12,6 +12,7 @@ import Box from '@material-ui/core/Box';
 import { makeStyles } from "@material-ui/core/styles";
 import { Slide } from '@material-ui/core';
 import Container from "@material-ui/core/Container";
+import Gallery from '../components/carousel/carousel.component';
 import Aos from "aos";
 
 import ComboBrow from "../assets/carousel/combination-brows/combinationBrow2.png";
@@ -124,7 +125,8 @@ export default function Events() {
         </Box>
         <Container className={classes.cardGrid} maxWidth="lg">
           {/* End hero unit */}
-          <Grid data-aos="fade-down" container spacing={2}>
+          <Gallery />
+          {/* <Grid data-aos="fade-down" container spacing={2}>
             {tiers.map((tier) => (
               <Grid item key={tier.title} xs={12} sm={6} md={4}>
                 <Card className={classes.card} >
@@ -152,7 +154,7 @@ export default function Events() {
                 </Card>
               </Grid>
             ))}
-          </Grid>
+          </Grid> */}
         </Container>
       </main>
       <Footer />
