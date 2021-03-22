@@ -36,13 +36,13 @@ import 'aos/dist/aos.css';
   
   const sidebar = {
     bookings: [
-      { title: 'Monday: 10am-6pm', url: '#' },
-      { title: 'Tuesday: 10am-6pm', url: '#' },
-      { title: 'Wednesday: 10am-6pm', url: '#' },
-      { title: 'Thursday: 9am-8pm (BROW/LASH DAY)', url: '#' },
-      { title: 'Friday: 9am-10pm', url: '#' },
-      { title: 'Saturday: OFF', url: '#' },
-      { title: 'Sunday: OFF', url: '#' }
+      { title: 'Monday: 10am-7pm', url: 'https://square.site/book/DBZVBRD8VF6MK/beauty-alyssandrak-ridgefield-wa' },
+      { title: 'Tuesday: 10am-7pm', url: 'https://square.site/book/DBZVBRD8VF6MK/beauty-alyssandrak-ridgefield-wa' },
+      { title: 'Wednesday: 10am-7pm', url: 'https://square.site/book/DBZVBRD8VF6MK/beauty-alyssandrak-ridgefield-wa' },
+      { title: 'Thursday: 9am-8pm (BROW/LASH DAY)', url: 'https://square.site/book/LR4716B541B83/lovely-a-self-center-vancouver-wa' },
+      { title: 'Friday: 10am-8pm', url: 'https://square.site/book/DBZVBRD8VF6MK/beauty-alyssandrak-ridgefield-wa' },
+      { title: 'Saturday: 9am-8pm (BROW/LASH DAY)', url: 'https://square.site/book/LR4716B541B83/lovely-a-self-center-vancouver-wa' },
+      { title: 'Sunday: OFF', url: 'https://square.site/book/DBZVBRD8VF6MK/beauty-alyssandrak-ridgefield-wa' }
     ],
     social: [
       { name: 'Instagram', icon: InstagramIcon },

@@ -2,10 +2,11 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
+import Background from '../../../assets/alykLogo.png';
 
 const useStyles = makeStyles((theme) =>({
   heroContent: {
-    backgroundImage: "linear-gradient(0deg, rgba(252, 154, 224, 0.86), rgba(252, 158, 244, 0.88)), url('http://static1.squarespace.com/static/55458a02e4b0b68214c256b8/t/5545afeae4b07c8a62a438b6/1556984112510/')",
+    backgroundImage: "linear-gradient(0deg, rgba(252, 154, 224, 0.86), rgba(252, 158, 244, 0.98)), url('https://i.ibb.co/LJ9cHyD/alyk-Logo-BW.png')",
     backgroundRepeat: 'no-repeat',
     backgroundSize: '100%',
     minHeight: '45vh',

@@ -27,7 +27,7 @@ const tiers = [
     {
       title: 'Microblading',
       subheader: 'Eyebrows / Lips',
-      description: ['Classic microblading | $400', 'Powder/makeup or ombre  |  $500', 'Combination microblading & shading  |  $550', '4-8 week perfecting touch up  |  $100', 'Annual touch up  |  $250'],
+      description: ['Lip Blush | $350', '8-10 week perfecting touch up | $100', 'Annual touch up | $250', 'Classic microblading | $450', 'Powder/makeup or ombre  |  $550', 'Combination microblading & shading  |  $650', '4-8 week perfecting touch up  |  $100', 'Annual touch up  |  $250'],
       buttonText: 'More Info',
       buttonVariant: 'contained',
       buttonLink: '/brows'
@@ -41,7 +41,7 @@ const tiers = [
         'Event Makeup  |  $100',
         'Event Hair  |  $65',
         'Travel Fee  |  $25+',
-        '**All makeup services include a touch up kit and false lashes**',
+        '**All makeup services include a touch up kit and false lashes**'
       ],
       buttonText: 'More Info',
       buttonVariant: 'contained',
@@ -51,14 +51,13 @@ const tiers = [
       title: 'Color Services',
       subheader: 'Text consultation ** required for price',
       description: [
-        'Highlights  |  $90+     Partial  |  $80+',
-        'Babylights | Text consultation*',
-        'Balayage  |  $110+',
-        'Lowlights  |  $85+     Partial  |  $70+',
-        'Platinum  |  $115+',
-        'Platinum Retouch  |  $85+',
-        'Root Retouch  |  $45+',
-        'All Over Color  |  $65+     Partial  |  $45+'
+        'Highlights  |  $165+ Partial  |  $145+',
+        'Balayage  |  $150+',
+        'Lowlights  |  $115+ Partial  |  $85+',
+        'Platinum  |  $200+',
+        'Platinum Retouch  |  $100+',
+        'Root Retouch  |  $70+',
+        'All Over Color  |  $85+'
       ],
       buttonText: 'More Info',
       buttonVariant: 'contained',
@@ -66,15 +65,13 @@ const tiers = [
     },
     {
       title: 'Haircuts',
-      subheader: 'Hair Treatments Available',
+      subheader: 'Hair Treatments Available - Service Add-Ons $30',
       description: [
-        'Women\'s  |  $40',
-        'Men\'s  |  $20',
-        'Health Trim  |  $20',
-        'Lowlights  |  $85+     Partial  |  $70+',
-        'Lil\' Girls  |  $15 (up to 12 years young)',
-        'Lil\' Boys  |  $12 (up to 12 years young)',
-        'Bang Trim  |  $10'
+        'Women\'s  |  $50',
+        'Men\'s  |  $25',
+        'Lil\' Girls  |  $20 (up to 12 years young)',
+        'Lil\' Boys  |  $15 (up to 12 years young)',
+        'Bang Trim  |  $15'
       ],
       buttonText: 'More Info',
       buttonVariant: 'contained',
