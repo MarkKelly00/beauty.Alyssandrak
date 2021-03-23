@@ -9,7 +9,6 @@ import {
   Card,
   CardContent,
   CardMedia,
-  Typography,
   Grid,
   Button,
 } from "@material-ui/core";
@@ -40,7 +39,6 @@ function Banner(props) {
     const media = (
       <Grid item xs={12 / totalItems} key={item.Name}>
         <CardMedia className="Media" image={item.Image} title={item.Name} >
-          <Typography component="a" className="MediaCaption" href="https://square.site/book/DBZVBRD8VF6MK/beauty-alyssandrak-ridgefield-wa" target="_blank">{item.Name}</Typography>
         </CardMedia>
       </Grid>
     );
@@ -168,7 +166,7 @@ class Gallery extends React.Component {
   render() {
     return (
       <div>
-        <Button disabled>Events Gallery</Button>
+        <Button disabled>Color Gallery</Button>
         {/* <Button href="https://square.site/book/DBZVBRD8VF6MK/beauty-alyssandrak-ridgefield-wa">
           Click To Book
         </Button> */}
