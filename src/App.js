@@ -5,7 +5,6 @@ import Services from './pages/services';
 import Contact from './pages/contact';
 import MyLocation from './pages/location';
 import Hair from './pages/hair';
-import Color from './pages/color';
 import Brows from './pages/brows';
 import Events from './pages/events';
 
@@ -21,9 +20,8 @@ export default function App() {
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/location' component={MyLocation} />
         <Route exact path='/brows' component={Brows} />
-        <Route exact path='/hair' component={Hair} />
         <Route exact path='/events' component={Events} />
-        <Route exact path='/color' component={Color} />
+        <Route exact path='/hair' component={Hair} />
         </Switch>
       </Router>
     </React.Fragment>

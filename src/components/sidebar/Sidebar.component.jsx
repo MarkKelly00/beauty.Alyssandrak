@@ -38,7 +38,7 @@ export default function Sidebar(props) {
         Book With Me!
       </Typography>
       {bookings.map((booking) => (
-        <Link display="block" variant="body1" href={booking.url} key={booking.title} target="_blank">
+        <Link display="block" variant="body1" href={booking.url} key={booking.title} target="_blank" style={{color: '#f548d9', fontWeight: 'bold'}}>
           {booking.title}
         </Link>
       ))}
@@ -46,7 +46,7 @@ export default function Sidebar(props) {
         Social
       </Typography>
       {social.map((network) => (
-        <Link display="block" variant="body1" href="https://www.instagram.com/beauty.alyssandrak/?hl=en" key={network} target="_blank">
+        <Link display="block" variant="body1" href="https://www.instagram.com/beauty.alyssandrak/?hl=en" key={network} target="_blank" style={{color: '#f548d9', fontWeight: 'bold'}}>
           <Grid container direction="row" spacing={1} alignItems="center">
             <Grid item>
               <network.icon />

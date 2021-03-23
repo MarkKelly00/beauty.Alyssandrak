@@ -61,7 +61,7 @@ const tiers = [
       ],
       buttonText: 'More Info',
       buttonVariant: 'contained',
-      buttonLink: '/color'
+      buttonLink: '/hair'
     },
     {
       title: 'Haircuts',

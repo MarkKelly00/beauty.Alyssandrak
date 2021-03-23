@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import Header from "../components/header/header.component";
 import Footer from "../components/footer/footer";
 import Typography from "@material-ui/core/Typography";
-import Box from '@material-ui/core/Box';
+import Box from "@material-ui/core/Box";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import Gallery from '../components/carousel/events/carousel.component';
+import Gallery from "../components/carousel/events/carousel.component";
 import Aos from "aos";
 
 import ComboBrow from "../assets/carousel/combination-brows/combinationBrow2.png";
@@ -35,9 +35,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     transition: "all 0.3s cubic-bezier(.25,.8,.25,1)",
-    '&:hover': {
-      boxShadow: "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)"
-    }
+    "&:hover": {
+      boxShadow: "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
+    },
   },
   cardMedia: {
     paddingTop: "56.25%", // 16:9
@@ -98,7 +98,7 @@ export default function Events() {
               color="textPrimary"
               gutterBottom
             >
-              Hair | Makeup | Weddings | Events
+              Weddings & Events
             </Typography>
             <Typography
               variant="h7"
@@ -106,12 +106,22 @@ export default function Events() {
               color="textSecondary"
               paragraph
             >
-              <iframe title="vimeo-player" src="https://player.vimeo.com/video/393721208" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+              <iframe
+                title="vimeo-player"
+                src="https://player.vimeo.com/video/393721208"
+                width="100%"
+                height="320px"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
               <ul>
-              **All makeup services include a touch up kit and false lashes**
+                **All makeup services include a touch up kit and false lashes**
               </ul>
               <ul>
-              Bridal parties larger than 4-5 services will be referred to GlamourisePDX. I contract myself out to them and cannot manage large parties on my own. The owner will coordinate a team to fit your needs. be sure to request me.♡
+                Bridal parties larger than 4-5 services will be referred to
+                GlamourisePDX. I contract myself out to them and cannot manage
+                large parties on my own. The owner will coordinate a team to fit
+                your needs. be sure to request me.♡
               </ul>
             </Typography>
           </Container>

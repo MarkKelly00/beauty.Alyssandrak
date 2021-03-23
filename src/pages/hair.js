@@ -1,16 +1,11 @@
 import React, { useEffect } from "react";
 import Header from "../components/header/header.component";
-import Button from "@material-ui/core/Button";
-import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import Grid from "@material-ui/core/Grid";
 import Footer from "../components/footer/footer";
 import Typography from "@material-ui/core/Typography";
-import Box from '@material-ui/core/Box';
+import Box from "@material-ui/core/Box";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import Gallery from "../components/carousel/hair/carousel.component";
 import Aos from "aos";
 
 import ComboBrow from "../assets/carousel/combination-brows/combinationBrow2.png";
@@ -40,9 +35,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     transition: "all 0.3s cubic-bezier(.25,.8,.25,1)",
-    '&:hover': {
-      boxShadow: "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)"
-    }
+    "&:hover": {
+      boxShadow: "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
+    },
   },
   cardMedia: {
     paddingTop: "56.25%", // 16:9
@@ -63,7 +58,6 @@ const useStyles = makeStyles((theme) => ({
 const tiers = [
   {
     title: "Microblading",
-    description: [""],
     image: Microblading,
     buttonText: "Book Now",
     buttonVariant: "contained",
@@ -71,7 +65,6 @@ const tiers = [
   },
   {
     title: "Powder Brows",
-    description: [""],
     image: PowderBrow,
     buttonText: "Book Now",
     buttonVariant: "contained",
@@ -79,7 +72,6 @@ const tiers = [
   },
   {
     title: "Combination Brows",
-    description: [""],
     image: ComboBrow,
     buttonText: "Book Now",
     buttonVariant: "contained",
@@ -87,7 +79,7 @@ const tiers = [
   },
 ];
 
-export default function Brows() {
+export default function Events() {
   const classes = useStyles();
   useEffect(() => {
     Aos.init({ offset: 200, duration: 2000 });
@@ -106,63 +98,39 @@ export default function Brows() {
               color="textPrimary"
               gutterBottom
             >
-              Hair | Makeup | Weddings | Events
+              Haircuts & Color Services
             </Typography>
             <Typography
               variant="h7"
               align="center"
               color="textSecondary"
+                position="relative"
+                paddingBottom="56.10%"
+                height="0"
+                overflow="hidden"
               paragraph
             >
-              <iframe title="vimeo-player" src="https://player.vimeo.com/video/393721208" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/GUQKNM-d9k8"
+                title="YouTube video player"
+                frameborder="0"
+                width="100%"
+                height="425px"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+
+              <ul>
+                ** Text consultations required for price estimates. I cannot
+                guarantee the estimate to be the final price. It all depends on
+                how much time and product is needed to get you closer to your
+                goal! **
+              </ul>
             </Typography>
           </Container>
         </Box>
         <Container className={classes.cardGrid} maxWidth="lg">
-          {/* End hero unit */}
-          <Grid data-aos="fade-down" container spacing={2}>
-            {tiers.map((tier) => (
-              <Grid item key={tier.title} xs={12} sm={6} md={4}>
-                <Card className={classes.card} >
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image={tier.image}
-                    title="Image title"
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      {tier.title}
-                    </Typography>
-                    <Typography>
-                      <ul>
-                        {tier.description.map((line) => (
-                          <Typography
-                            component="li"
-                            variant="subtitle1"
-                            align="center"
-                            key={line}
-                          >
-                            {line}
-                          </Typography>
-                        ))}
-                      </ul>
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button
-                      className={classes.button}
-                      fullWidth
-                      variant={tier.buttonVariant}
-                      color="primary"
-                      href={tier.buttonLink}
-                    >
-                      {tier.buttonText}
-                    </Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
+          <Gallery />
         </Container>
       </main>
       <Footer />
