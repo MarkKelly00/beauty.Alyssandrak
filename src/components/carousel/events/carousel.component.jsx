@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 import autoBind from "auto-bind";
-import Logo from "../../assets/navLogo.png";
+import Logo from "../../../assets/navLogo.png";
 
 import "./carousel.styles.scss";
 
