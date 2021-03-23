@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 import autoBind from "auto-bind";
+import Logo from "../../assets/navLogo.png";
 
 import "./carousel.styles.scss";
 
@@ -23,13 +24,10 @@ function Banner(props) {
 
   let items = [];
   const content = (
-    <Grid item xs={12 / totalItems} key="content">
-      <CardContent className="Content">
-        <Typography className="Title">{props.item.Name}</Typography>
-
-        <Typography className="Caption">{props.item.Caption}</Typography>
-
-        <Button variant="outlined" className="ViewButton">
+    <Grid item xs={12 / totalItems} key="content" style={{backgroundColor: "#f588d9"}}>
+      <CardContent className="Content" >
+        <img src={Logo} />
+        <Button variant="outlined" className="ViewButton" href="https://square.site/book/DBZVBRD8VF6MK/beauty-alyssandrak-ridgefield-wa" target="_blank">
           Book Now
         </Button>
       </CardContent>
@@ -41,8 +39,8 @@ function Banner(props) {
 
     const media = (
       <Grid item xs={12 / totalItems} key={item.Name}>
-        <CardMedia className="Media" image={item.Image} title={item.Name}>
-          <Typography className="MediaCaption">{item.Name}</Typography>
+        <CardMedia className="Media" image={item.Image} title={item.Name} >
+          <Typography component="a" className="MediaCaption" href="https://square.site/book/DBZVBRD8VF6MK/beauty-alyssandrak-ridgefield-wa" target="_blank">{item.Name}</Typography>
         </CardMedia>
       </Grid>
     );
@@ -69,6 +67,7 @@ function Banner(props) {
 
 const items = [
   {
+    contentPosition: "left",
     Items: [
       {
         Name: "Bride - Hair & Makeup",
@@ -81,6 +80,7 @@ const items = [
     ],
   },
   {
+    contentPosition: "middle",
     Items: [
       {
         Name: "Bride - Hair Updo",
@@ -93,6 +93,7 @@ const items = [
     ],
   },
   {
+    contentPosition: "right",
     Items: [
       {
         Name: "Bride - Hair & Makeup",
@@ -109,36 +110,23 @@ const items = [
 class Gallery extends React.Component {
   constructor(props) {
     super(props);
-
     autoBind(this);
   }
 
   render() {
     return (
       <div>
-        <Button disabled>Events</Button>
-        <Button
-          href="https://square.site/book/DBZVBRD8VF6MK/beauty-alyssandrak-ridgefield-wa"
-        >
+        <Button disabled>Events Gallery</Button>
+        {/* <Button href="https://square.site/book/DBZVBRD8VF6MK/beauty-alyssandrak-ridgefield-wa">
           Click To Book
-        </Button>
+        </Button> */}
         <Carousel
-          className="Example"
-          next={(now, previous) =>
-            console.log(
-              `Next User Callback: Now displaying child${now}. Previously displayed child${previous}`
-            )
-          }
-          prev={(now, previous) =>
-            console.log(
-              `Prev User Callback: Now displaying child${now}. Previously displayed child${previous}`
-            )
-          }
-          onChange={(now, previous) =>
-            console.log(
-              `OnChange User Callback: Now displaying child${now}. Previously displayed child${previous}`
-            )
-          }
+          className="EventPics"
+          navButtonsProps={{
+            style: {
+              backgroundColor: "#fca7ea",
+            },
+          }}
         >
           {items.map((item, index) => {
             return (
