@@ -1,34 +1,33 @@
 {
   "files": {
     "main.css": "/beauty.Alyssandrak/static/css/main.dcba83f9.chunk.css",
-    "main.js": "/beauty.Alyssandrak/static/js/main.d3137726.chunk.js",
-    "main.js.map": "/beauty.Alyssandrak/static/js/main.d3137726.chunk.js.map",
-    "runtime-main.js": "/beauty.Alyssandrak/static/js/runtime-main.bbc50fd9.js",
-    "runtime-main.js.map": "/beauty.Alyssandrak/static/js/runtime-main.bbc50fd9.js.map",
+    "main.js": "/beauty.Alyssandrak/static/js/main.5e0776f9.chunk.js",
+    "main.js.map": "/beauty.Alyssandrak/static/js/main.5e0776f9.chunk.js.map",
+    "runtime-main.js": "/beauty.Alyssandrak/static/js/runtime-main.2a0ab68d.js",
+    "runtime-main.js.map": "/beauty.Alyssandrak/static/js/runtime-main.2a0ab68d.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/beauty.Alyssandrak/static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.0621acec.chunk.js": "/beauty.Alyssandrak/static/js/2.0621acec.chunk.js",
-    "static/js/2.0621acec.chunk.js.map": "/beauty.Alyssandrak/static/js/2.0621acec.chunk.js.map",
-    "static/js/3.2ffa6a81.chunk.js": "/beauty.Alyssandrak/static/js/3.2ffa6a81.chunk.js",
-    "static/js/3.2ffa6a81.chunk.js.map": "/beauty.Alyssandrak/static/js/3.2ffa6a81.chunk.js.map",
+    "static/js/2.055bdfd5.chunk.js": "/beauty.Alyssandrak/static/js/2.055bdfd5.chunk.js",
+    "static/js/2.055bdfd5.chunk.js.map": "/beauty.Alyssandrak/static/js/2.055bdfd5.chunk.js.map",
+    "static/js/3.24332455.chunk.js": "/beauty.Alyssandrak/static/js/3.24332455.chunk.js",
+    "static/js/3.24332455.chunk.js.map": "/beauty.Alyssandrak/static/js/3.24332455.chunk.js.map",
     "index.html": "/beauty.Alyssandrak/index.html",
     "static/css/2.7fc9bc2b.chunk.css.map": "/beauty.Alyssandrak/static/css/2.7fc9bc2b.chunk.css.map",
     "static/css/main.dcba83f9.chunk.css.map": "/beauty.Alyssandrak/static/css/main.dcba83f9.chunk.css.map",
-    "static/js/2.0621acec.chunk.js.LICENSE.txt": "/beauty.Alyssandrak/static/js/2.0621acec.chunk.js.LICENSE.txt",
+    "static/js/2.055bdfd5.chunk.js.LICENSE.txt": "/beauty.Alyssandrak/static/js/2.055bdfd5.chunk.js.LICENSE.txt",
     "static/media/DSC00172.30ccfa38.jpg": "/beauty.Alyssandrak/static/media/DSC00172.30ccfa38.jpg",
     "static/media/JSP_8824.4967d35e.jpg": "/beauty.Alyssandrak/static/media/JSP_8824.4967d35e.jpg",
     "static/media/Microblading3.c2003f45.png": "/beauty.Alyssandrak/static/media/Microblading3.c2003f45.png",
     "static/media/PowderBrow5.69e7443a.png": "/beauty.Alyssandrak/static/media/PowderBrow5.69e7443a.png",
     "static/media/alyk.7c30930b.png": "/beauty.Alyssandrak/static/media/alyk.7c30930b.png",
-    "static/media/alykLogo.3ea9a660.png": "/beauty.Alyssandrak/static/media/alykLogo.3ea9a660.png",
     "static/media/combinationBrow2.a9fc23e2.png": "/beauty.Alyssandrak/static/media/combinationBrow2.a9fc23e2.png",
     "static/media/junebug.5a44f2d3.png": "/beauty.Alyssandrak/static/media/junebug.5a44f2d3.png",
     "static/media/navLogo.fc4b5125.png": "/beauty.Alyssandrak/static/media/navLogo.fc4b5125.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.bbc50fd9.js",
+    "static/js/runtime-main.2a0ab68d.js",
     "static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.0621acec.chunk.js",
+    "static/js/2.055bdfd5.chunk.js",
     "static/css/main.dcba83f9.chunk.css",
-    "static/js/main.d3137726.chunk.js"
+    "static/js/main.5e0776f9.chunk.js"
   ]
 }
