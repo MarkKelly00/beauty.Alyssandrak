@@ -187,6 +187,7 @@ export default function Brows() {
                       variant={tier.buttonVariant}
                       color="primary"
                       href={tier.buttonLink}
+                      target="_blank"
                     >
                       {tier.buttonText}
                     </Button>

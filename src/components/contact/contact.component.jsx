@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Axios,{ db } from "axios";
+import { Axios, db } from "../../firebase/firebaseConfig";
 import { makeStyles } from "@material-ui/core/styles";
 import Icon from "@material-ui/core/Icon";
 
