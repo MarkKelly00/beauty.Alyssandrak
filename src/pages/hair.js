@@ -8,10 +8,6 @@ import Container from "@material-ui/core/Container";
 import Gallery from "../components/carousel/hair/carousel.component";
 import Aos from "aos";
 
-import ComboBrow from "../assets/carousel/combination-brows/combinationBrow2.png";
-import Microblading from "../assets/carousel/microblading/Microblading3.png";
-import PowderBrow from "../assets/carousel/powder-brows/PowderBrow5.png";
-
 import "aos/dist/aos.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -54,30 +50,6 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(6),
   },
 }));
-
-const tiers = [
-  {
-    title: "Microblading",
-    image: Microblading,
-    buttonText: "Book Now",
-    buttonVariant: "contained",
-    buttonLink: "/",
-  },
-  {
-    title: "Powder Brows",
-    image: PowderBrow,
-    buttonText: "Book Now",
-    buttonVariant: "contained",
-    buttonLink: "/",
-  },
-  {
-    title: "Combination Brows",
-    image: ComboBrow,
-    buttonText: "Book Now",
-    buttonVariant: "contained",
-    buttonLink: "/",
-  },
-];
 
 export default function Events() {
   const classes = useStyles();

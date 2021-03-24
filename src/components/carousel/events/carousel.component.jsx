@@ -25,7 +25,7 @@ function Banner(props) {
   const content = (
     <Grid item xs={12 / totalItems} key="content" style={{backgroundColor: "#f588d9"}}>
       <CardContent className="Content" >
-        <img src={Logo} className="imgLogo"/>
+        <img src={Logo} className="imgLogo" alt="img logo" />
         <Button variant="outlined" className="ViewButton" href="https://square.site/book/DBZVBRD8VF6MK/beauty-alyssandrak-ridgefield-wa" target="_blank" style={{marginTop: '85px'}}>
           Book Now
         </Button>

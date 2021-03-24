@@ -91,7 +91,7 @@ export default function Header() {
             className={classes.toolbarTitle}
           >
             <Link to="/" className={classes.link}>
-              <img src={Logo} />
+              <img src={Logo} alt="logo" />
             </Link>
           </Typography>
           <nav>

@@ -17,7 +17,7 @@ export default function Hero() {
     <Typography component="h3" variant="h3" align="center" color="textPrimary" gutterBottom>
       Contact Me
     </Typography>
-    <Typography variant="h7" align="center" color="textSecondary" component="p">
+    <Typography variant="h6" align="center" color="textSecondary" component="p">
     Feel free to contact me using the form below!
     </Typography>
   </Container>

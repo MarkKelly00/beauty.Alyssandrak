@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import Background from '../../../assets/alykLogo.png';
+// import Background from '../../../assets/alykLogo.png';
 
 const useStyles = makeStyles((theme) =>({
   heroContent: {

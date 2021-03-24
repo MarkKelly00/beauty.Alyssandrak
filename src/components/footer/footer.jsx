@@ -13,7 +13,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link to="/" color="black" style={{textDecoration: 'none', fontFamily: "'Josefin Sans', sans-serif", fontSize: 15}}>
+      <Link to="/" style={{textDecoration: 'none', fontFamily: "'Josefin Sans', sans-serif", fontSize: 15}}>
         Beauty.AlyssandraK
       </Link>{' '}
       {new Date().getFullYear()}
@@ -24,7 +24,7 @@ function Copyright() {
 
 function Insta() {
     return (
-        <Typography variant="body2" color="black" align="center">
+        <Typography variant="body2" align="center">
         <a href="https://www.instagram.com/beauty.alyssandrak/?hl=en"><InstagramIcon style={{paddingTop: 5}}/></a>
         <a href="tel:+1-360-772-0226"><PhoneIcon style={{paddingTop: 5}}/></a>
         </Typography>
