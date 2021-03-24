@@ -1,8 +1,7 @@
 {
-  "name": "beauty.Alyssandrak",
+  "name": "alyssandrak",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://markkelly00.github.io/beauty.Alyssandrak/",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
