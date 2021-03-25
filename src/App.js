@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Main from './pages/main';
 import Services from './pages/services';
@@ -7,12 +7,19 @@ import MyLocation from './pages/location';
 import Hair from './pages/hair';
 import Brows from './pages/brows';
 import Events from './pages/events';
+import LoadingScreen from './components/loading/loading.component';
 
 
 export default function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 1000)
+  }, [])
 
   return (
     <React.Fragment>
+      {loading === false ? (
       <Router>
         <Switch>
         <Route exact path='/' component={Main} />
@@ -24,6 +31,9 @@ export default function App() {
         <Route exact path='/hair' component={Hair} />
         </Switch>
       </Router>
+      ) : (
+        <LoadingScreen />
+      )}
     </React.Fragment>
   );
 }
