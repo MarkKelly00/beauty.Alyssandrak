@@ -23,9 +23,9 @@ export default function App() {
       <Router>
         <Switch>
         <Route exact path='/' component={Main} />
-        <Route exact path='/services' component={Services} />
-        <Route exact path='/contact' component={Contact} />
-        <Route exact path='/location' component={MyLocation} />
+        <Route exact path='/Services' component={Services} />
+        <Route exact path='/Contact' component={Contact} />
+        <Route exact path='/Locations' component={MyLocation} />
         <Route exact path='/brows' component={Brows} />
         <Route exact path='/events' component={Events} />
         <Route exact path='/hair' component={Hair} />

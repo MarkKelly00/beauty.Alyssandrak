@@ -11,6 +11,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Typography from "@material-ui/core/Typography";
 import Logo from "../../assets/navLogo.png";
 import DraftsIcon from "@material-ui/icons/Drafts";
+import NavBar from '../navbar/navbar.component';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -63,6 +64,7 @@ const StyledMenuItem = withStyles((theme) => ({
   },
 }))(MenuItem);
 
+
 export default function Header() {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -94,35 +96,9 @@ export default function Header() {
               <img src={Logo} alt="logo" />
             </Link>
           </Typography>
-          <nav>
-            <Link
-              to="/services"
-              variant="button"
-              color="textPrimary"
-              href="#"
-              className={classes.link}
-            >
-              Services
-            </Link>
-            <Link
-              to="/contact"
-              variant="button"
-              color="textPrimary"
-              href="#"
-              className={classes.link}
-            >
-              Contact
-            </Link>
-            <Link
-              to="/location"
-              variant="button"
-              color="textPrimary"
-              href="#"
-              className={classes.link}
-            >
-              My Locations
-            </Link>
-          </nav>
+          {/* NavBar */}
+          <NavBar />
+          {/* NavBar */}
           <Button
             href="#"
             color="default"
