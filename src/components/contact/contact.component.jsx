@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Axios, db } from "../../firebase/firebaseConfig";
 import { makeStyles } from "@material-ui/core/styles";
-import Icon from "@material-ui/core/Icon";
+import SendIcon from '@material-ui/icons/Send';
 
 import "./contact.styles.scss";
 
@@ -83,7 +83,7 @@ const Form = () => {
       onChange={updateInput}
       value={formData.message || ''}
     ></textarea>
-    <button type="submit" className={classes.button}>Submit&nbsp;<Icon>send</Icon></button>
+    <button type="submit" className={classes.button}>Submit&nbsp;<SendIcon>send</SendIcon></button>
   </form>
   );
 };
