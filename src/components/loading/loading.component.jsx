@@ -4,11 +4,11 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 
 const useStyles = makeStyles((theme) => ({
   spinner: {
-    display: 'flex',
-    position: 'relative',
-    },
-  loading: {
-    marginLeft: '50%',
+    display: 'block',
+    position: 'fixed',
+    zIndex: 1031, 
+    top: '40%', 
+    right: '48%', 
     }
 }));
 
@@ -17,7 +17,7 @@ export default function LoadingScreen() {
 
   return (
     <div className={classes.spinner}>
-      <CircularProgress color="secondary" className={classes.loading}/>
+      <CircularProgress color="secondary" />
     </div>
   );
 }
