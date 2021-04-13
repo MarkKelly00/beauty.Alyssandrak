@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import Typewriter from 'typewriter-effect';
+// import Typewriter from 'typewriter-effect';
 import AlyK from '../../assets/alyk.png';
 
 const useStyles = makeStyles((theme) => ({
@@ -28,8 +28,10 @@ const useStyles = makeStyles((theme) => ({
   },
   h1: {
     fontFamily: "'Courier New', serif",
-    fontSize: '40px',
-    textShadow: "2px 2px #ffffff",
+    fontSize: '30px',
+    textShadow: "2px 2px #fff",
+    color: '#000',
+    marginLeft: '50px',
 }
 }));
 
@@ -40,8 +42,9 @@ export default function MainFeaturedPost(props) {
     <Paper className={classes.mainFeaturedPost} >
       <Grid container>
           <div className={classes.mainFeaturedPostContent}>
-            <Typography className={classes.h1} component="h1" variant="subheading" color="textPrimary" style={{height: 200}}>
-            <Typewriter
+            <Typography className={classes.h1} component="h1" variant="subheading">
+              ** Currently Accepting New Permanent Makeup Clients **
+            {/* <Typewriter
               options={{
                 strings: [
                   `Welcome!!!`,
@@ -51,7 +54,7 @@ export default function MainFeaturedPost(props) {
                 autoStart: true,
                 loop: true,
               }}
-            />&#128129;&#128139; &#9986;
+            />&#128129;&#128139; &#9986; */}
             </Typography>
           </div>
       </Grid>

@@ -20,6 +20,9 @@ const useStyles = makeStyles({
   cardMedia: {
     width: 200,
   },
+  cardText: {
+    fontFamily: 'Inconsolata',
+  },
   linkStyle: {
     textDecoration: 'none',
     color: 'inherit',
@@ -34,16 +37,16 @@ export default function FeaturedPost(props) {
     <Grid item xs={12} md={6}>
         <Card className={classes.card} >
           <div className={classes.cardDetails}>
-            <CardContent >
+            <CardContent>
             <Link className={classes.linkStyle} variant="subtitle1" href="/contact">
-              <Typography component="h2" variant="h5">
+              <Typography component="h2" variant="h5" className={classes.cardText}>
                 {post.title}
               </Typography>
-              <Typography variant="subtitle1" color="textSecondary">
+              <Typography variant="subtitle1" color="textSecondary" className={classes.cardText}>
                 {post.sub}
               </Typography>
               <br />
-              <Typography variant="subtitle1" paragraph>
+              <Typography variant="subtitle1" paragraph className={classes.cardText}>
                 {post.description}
               </Typography>
             </Link>

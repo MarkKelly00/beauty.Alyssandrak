@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) =>({
   heroContent: {
+    fontFamily: 'Inconsolata',
     padding: theme.spacing(4, 0, 3),
   }
 }));
@@ -14,7 +15,7 @@ export default function Hero() {
 
   return (
     <Container maxWidth="sm" component="main" className={classes.heroContent}>
-    <Typography component="h2" variant="h3" align="center" color="textPrimary" gutterBottom>
+    <Typography component="h2" variant="h3" align="center" color="textPrimary" style={{fontFamily: 'Inconsolata'}} gutterBottom>
       My Locations
     </Typography>
     <Typography variant="h7" align="center" color="textSecondary" component="p">

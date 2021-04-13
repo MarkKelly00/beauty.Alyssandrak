@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
   heroContent: {
     backgroundColor: "#fca7ea",
+    fontFamily: 'Inconsolata',
     padding: theme.spacing(6, 0, 2),
   },
   heroButtons: {
@@ -104,6 +105,7 @@ export default function Brows() {
               variant="h3"
               align="center"
               color="textPrimary"
+              style={{fontFamily: 'Inconsolata'}}
               gutterBottom
             >
               #BrowsbyAlyssandra

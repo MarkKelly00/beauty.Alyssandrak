@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
   },
   heroContent: {
+    fontFamily: 'Inconsolata',
     backgroundColor: "#fca7ea",
     padding: theme.spacing(6, 0, 2),
   },
@@ -68,6 +69,7 @@ export default function Events() {
               variant="h3"
               align="center"
               color="textPrimary"
+              style={{fontFamily: 'Inconsolata'}}
               gutterBottom
             >
               Haircuts & Color Services

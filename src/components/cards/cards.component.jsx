@@ -101,7 +101,7 @@ export default function Cards() {
                   action={tier.title === 'Pro'}
                   className={classes.cardHeader}
                 />
-                <CardContent >
+                <CardContent>
                   <ul>
                     {tier.description.map((line) => (
                       <Typography component="li" variant="subtitle1" align="center" key={line}>
@@ -121,7 +121,7 @@ export default function Cards() {
         </Grid>
       <Container>
         <br /><br />
-        <Typography data-aos="fade-up" variant="body1" align="center" color="textSecondary" component="span">
+        <Typography data-aos="fade-up" variant="body1" align="center" color="textSecondary" style={{fontFamily: 'Inconsolata'}} component="span">
         ** Text consultations required for price estimates. I cannot guarantee the estimate to be the final price. It all depends on how much time and product is needed to get you closer to your goal!**
         </Typography>
       </Container>

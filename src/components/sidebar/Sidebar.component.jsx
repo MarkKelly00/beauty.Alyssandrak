@@ -12,10 +12,12 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     overflow: 'hidden',
     backgroundColor: '#f285da',
+    fontFamily: 'Inconsolata',
     maxWidth: 350
   },
   sidebarSection: {
     marginTop: theme.spacing(2),
+    fontFamily: 'Inconsolata',
   },
   image: {
     marginLeft: 'auto',
