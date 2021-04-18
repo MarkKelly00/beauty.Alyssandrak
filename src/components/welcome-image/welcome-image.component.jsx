@@ -22,16 +22,19 @@ const useStyles = makeStyles((theme) => ({
     position: 'relative',
     padding: theme.spacing(3),
     [theme.breakpoints.up('md')]: {
-      padding: theme.spacing(4),
+      padding: theme.spacing(2.5),
       paddingRight: 0,
     },
   },
   h1: {
     fontFamily: "'Courier New', serif",
     fontSize: '30px',
-    textShadow: "2px 2px #fff",
+    fontWeight: '500',
+    textShadow: "2px 1px #fff",
     color: '#000',
     marginLeft: '50px',
+    backgroundColor: 'rgba(210, 154, 186, 0.5)',
+    padding: '5px 30px',
 }
 }));
 

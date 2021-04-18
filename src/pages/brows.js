@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
   heroContent: {
     backgroundColor: "#fca7ea",
     fontFamily: 'Inconsolata',
-    padding: theme.spacing(6, 0, 2),
+    padding: theme.spacing(2),
   },
   heroButtons: {
     marginTop: theme.spacing(4),
@@ -102,10 +102,10 @@ export default function Brows() {
           <Container maxWidth="md">
             <Typography
               component="h1"
-              variant="h3"
+              variant="h4"
               align="center"
               color="textPrimary"
-              style={{fontFamily: 'Inconsolata'}}
+              style={{fontFamily: 'Inconsolata', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'wrap'}}
               gutterBottom
             >
               #BrowsbyAlyssandra
