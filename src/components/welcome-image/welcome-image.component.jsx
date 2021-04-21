@@ -4,7 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 // import Typewriter from 'typewriter-effect';
-import AlyK from '../../assets/alyk.png';
+import AlyK from '../../assets/alyk.jpg';
 
 const useStyles = makeStyles((theme) => ({
   mainFeaturedPost: {
