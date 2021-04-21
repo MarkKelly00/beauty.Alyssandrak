@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
-    height: '74vh',
+    height: '68vh',
   },
   mainFeaturedPostContent: {
     position: 'relative',
