@@ -12,7 +12,7 @@ import Box from '@material-ui/core/Box';
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Aos from "aos";
-
+import FavoriteIcon from '@material-ui/icons/Favorite';
 import ComboBrow from "../assets/carousel/combination-brows/combinationBrow2.png";
 import Microblading from "../assets/carousel/microblading/Microblading3.png";
 import PowderBrow from "../assets/carousel/powder-brows/PowderBrow5.png";
@@ -32,8 +32,22 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(4),
   },
   cardGrid: {
+    position: 'relative',
     paddingTop: theme.spacing(8),
     paddingBottom: theme.spacing(8),
+  },
+  numCircles: {
+    width: 39.4,
+    height: 39.4,
+    borderRadius: '50%',
+    textAlign: 'center',
+    border: '2px solid #feb8ee',
+    color: 'white',
+    backgroundColor: "#f588d9",
+    position: 'absolute',
+    top: '-20px',
+    left: '50%',
+    transform: 'translateX(-50%)',
   },
   card: {
     height: "100%",
@@ -154,6 +168,7 @@ export default function Brows() {
         </Box>
         <Container className={classes.cardGrid} maxWidth="lg">
           {/* End hero unit */}
+          <div className={classes.numCircles}><FavoriteIcon fontSize='large' style={{marginTop: 2}}/></div>
           <Grid data-aos="fade-down" container spacing={2}>
             {tiers.map((tier) => (
               <Grid item key={tier.title} xs={12} sm={6} md={4}>

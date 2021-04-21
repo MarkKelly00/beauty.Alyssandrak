@@ -2,9 +2,7 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
-import Location from '../../../pages/location';
-// import Background from '../../../assets/alykLogo.png';
+import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles((theme) =>({
   heroContent: {
@@ -14,7 +12,7 @@ const useStyles = makeStyles((theme) =>({
     minHeight: '35vh',
     maxWidth: '100%',
     fontFamily: 'Inconsolata',
-    padding: theme.spacing(6),
+    padding: theme.spacing(2),
   }
 }));
 
@@ -22,7 +20,8 @@ export default function Hero() {
   const classes = useStyles();
 
   return (
-    <Container maxWidth="sm" component="main" className={classes.heroContent}>
+    <Box className={classes.heroContent} boxShadow={3}>
+    <Container maxWidth="sm" component="main" className={classes.heroContent} >
     <Typography component="h2" variant="h3" align="center" color="textPrimary" style={{fontFamily: 'Inconsolata'}} gutterBottom>
       Services
     </Typography>
@@ -34,5 +33,6 @@ export default function Hero() {
     -My schedule has changed. I will be available for hair appointments Monday-Wednesday & Friday. Thursdays & Saturday will be reserved for microblading, powder brows and lip blush.
     </Typography>
   </Container>
+  </Box>
   );
 }

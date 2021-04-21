@@ -9,6 +9,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardHeader from '@material-ui/core/CardHeader';
 import Container from '@material-ui/core/Container';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 import 'aos/dist/aos.css';
 
 import './cards.styles.scss';
@@ -16,6 +17,23 @@ import './cards.styles.scss';
 const useStyles = makeStyles((theme) => ({
   cardHeader: {
     backgroundColor: '#f576d9'
+  },
+  cardGrid: {
+    position: 'relative',
+    paddingTop: theme.spacing(5),
+  },
+  numCircles: {
+    width: 39.4,
+    height: 39.4,
+    borderRadius: '50%',
+    textAlign: 'center',
+    border: '2px solid #feb8ee',
+    color: 'white',
+    backgroundColor: "#f588d9",
+    position: 'absolute',
+    top: '-35px',
+    left: '50%',
+    transform: 'translateX(-50%)',
   },
   button: {
     backgroundColor: '#fca7ea',
@@ -87,7 +105,8 @@ export default function Cards() {
   const classes = useStyles();
 
   return (
-    <Container maxWidth="lg" component="main">
+    <Container maxWidth="lg" component="main" className={classes.cardGrid}>
+        <div className={classes.numCircles}><FavoriteIcon fontSize='large' style={{marginTop: 2}}/></div>
         <Grid container spacing={2} alignItems="flex-start">
           {tiers.map((tier) => (
             
