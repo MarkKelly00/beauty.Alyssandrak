@@ -16,10 +16,10 @@ export default function Hero() {
   return (
     <Container maxWidth="sm" component="main" className={classes.heroContent}>
     <Typography component="h2" variant="h3" align="center" color="textPrimary" style={{fontFamily: 'Inconsolata'}} gutterBottom>
-      My Locations
+      My Location
     </Typography>
     <Typography variant="h7" align="center" color="textSecondary" component="p">
-    -As of November 1st 2020 I am no longer accepting new clients. If any openings for new clients come up I will post it on social media and from there it will be first-come-first-serve!
+    -Now accepting new clients for hair and permanent makeup!
     </Typography>
   </Container>
   );

@@ -3,10 +3,7 @@ import './data.styles.scss';
 
 
 export default function Data() {
-  const apiKey = "AIzaSyBTHG7Q8WoPwWgU3X7vJfY9EM1vSLru-m8";
-  const lat = '45.7445900';
-  const long = '-122.6376871';
-  const location = "https://www.google.com/maps/embed/v1/search?key=" + apiKey + "&q=" + lat + "," + long + "&zoom=17&maptype=satellite";
+  const location = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2788.464898329395!2d-122.56315538443587!3d45.66156667910382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495afe2fd1c3001%3A0xe4caa493c85c16f9!2sSpoiled%20Spa%20and%20Salon!5e0!3m2!1sen!2sus!4v1628574322129!5m2!1sen!2sus";
 
   return (
     <React.Fragment>
